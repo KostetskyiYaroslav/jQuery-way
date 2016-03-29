@@ -1,0 +1,1 @@
+<?php include "architecture/View/home.php";
