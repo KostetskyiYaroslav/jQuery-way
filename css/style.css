@@ -28,3 +28,13 @@ nav {
     margin: 3px;
 }
 
+.btn-to-top
+{
+    background: none;
+    border: 0;
+}
+.btn-to-top:focus
+ {
+     background: none;
+     border: 0;
+ }

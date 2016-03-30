@@ -28,7 +28,6 @@ switch ($method) {
                 if ($auth->get_Login() === $response->get_Login() &&
                     $auth->get_Password() === $response->get_Password() )
                 {
-
                     setcookie('login', $auth->get_Login(), $auth->get_Expire(), "/");
 
                     echo 'TRUE';
@@ -43,10 +42,17 @@ switch ($method) {
             echo 'FALSE' ;
             return 'FALSE';
 
-        } else {
-            echo 'Cookie unset!';
-            setcookie('login', null, -0, "/");
+        } else if(isset($_GET['logout'])){
+            if($_GET['logout'] === 'TRUE')
+            {
+                setcookie('login', null, 0, "/");
+                echo 'TRUE';
+                return 'TRUE';
+            }
+            echo 'FALSE';
+            return 'FALSE';
         }
+
         break;
 
     default:

@@ -1,4 +1,4 @@
-<?php $start = microtime(true); ?>
+<?php $micro_time_start = microtime(true); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@
       <div class="row card-panel center grey lighten-5 z-depth-1 center">
        <form class="col s12">
         <div class="row">
-            <?php require "components/login.php"; ?>
+<?php require "components/login.php"; ?>
         </div>
        </form>
       </div>
@@ -39,34 +39,22 @@
 
 <!--Logout page start-->
        <div class="page-content logout-page col s6 m6 l4 offset-m4">
-           <div class="row card-panel center grey lighten-5 z-depth-1 center">
-               <form class="col s12">
-                   <div class="row">
-                       <?php require "components/logout.php"; ?>
-                   </div>
-               </form>
-           </div>
+        <div class="row card-panel center grey lighten-5 z-depth-1 center">
+         <form class="col s12">
+          <div class="row">
+<?php require "components/logout.php"; ?>
+          </div>
+         </form>
+        </div>
        </div>
 <!--Logout page end-->
-
- <!--Upload page start-->
-      <div class="page-content upload-page col s6 m6 l4 offset-m4">
-       <div class="row  card-panel center grey lighten-5 z-depth-1 center">
-        <form class="col s12">
-         <div class="row">
-             <?php require "components/upload.php"; ?>
-         </div>
-        </form>
-       </div>
-      </div>
- <!--Upload page end-->
 
  <!--About Us page start-->
       <div class="page-content about-us-page col s6 m6 l4 offset-m4">
        <div class="row  card-panel center grey lighten-5 z-depth-1 center">
         <form class="col s12">
          <div class="row">
-             <?php require "components/about_us.php"; ?>
+<?php require "components/about_us.php"; ?>
          </div>
         </form>
        </div>
