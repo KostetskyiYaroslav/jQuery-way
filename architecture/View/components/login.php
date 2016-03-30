@@ -1,4 +1,5 @@
 <?php
+
 if(!isset($_COOKIE['login'])) {
     echo <<<"LOGIN"
          <form class="col s12">
