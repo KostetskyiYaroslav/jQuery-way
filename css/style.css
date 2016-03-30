@@ -1,25 +1,31 @@
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main {
-    flex: 1 0 auto;
-}
-
-nav {
-    background: #2196F3;
-}
-
-.container {
-    width: 100%;
-}
-
+/*LEFT-TOP LOGO(SOFT GROUP ACADEMY)*/
 .brand-logo {
     margin-left:5px;
 }
 
+/*Navigation menu*/
+nav {
+    background: #2196F3;
+}
+
+/*Main section */
+main {
+    flex: 1 0 auto; /*for stick footer*/
+}
+
+/*All content in MAIN*/
+.container {
+    width: 100%;
+}
+
+/*All content in MAIN*/
+body {
+    display: flex;          /*                */
+    min-height: 100vh;      /*FOR STICK FOOTER*/
+    flex-direction: column; /*                */
+}
+
+/*Welcome image: for full size on page */
 .welcome-image {
     width: 100%;
 }
@@ -28,13 +34,9 @@ nav {
     margin: 3px;
 }
 
-.btn-to-top
+/*`To top` button in Footer*/
+.btn-to-top, .btn-to-top:focus
 {
     background: none;
     border: 0;
 }
-.btn-to-top:focus
- {
-     background: none;
-     border: 0;
- }

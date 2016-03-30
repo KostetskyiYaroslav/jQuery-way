@@ -8,9 +8,9 @@ $(function ()
 
     //Event for scroll logic for button `To-Top`
     $(window).scroll(function() {
-        if ($('body').height() <= ($(window).scrollTop() + $(window).height() )) {
+        var windowPos = $(window).scrollTop() + $(window).height() + 15;
+        if ( $('body').height() <= windowPos )
             $('#to-top').show();
-        }
         else
             $('#to-top').hide();
     });
